@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:background="#aaaaaa"
+    tools:context="com.example.mohammed.lessonsmanager.info_activity">
+
+
+
+
+    <TextView
+        android:id="@+id/infoTitle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lesson"
+        android:enabled="false"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/subtitle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="insert sub title"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/infoTitle"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/infodetails"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:hint="insert your lesson infomation"
+        android:textColor="#000"
+        android:layout_alignParentStart="true"
+        android:gravity="top|left"
+        android:enabled="false"
+        android:background="#aaaaaa"
+        android:layout_below="@+id/subtitle" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:text="Home"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="29dp"
+        android:background="#5a5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </android.support.v7.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/save"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textAlignment="center"
+        android:layout_below="@+id/infodetails"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toStartOf="@+id/save" />
+
+    <EditText
+        android:id="@+id/date"
+        android:textColor="#a03"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="insert date"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:layout_below="@+id/infoTitle"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
